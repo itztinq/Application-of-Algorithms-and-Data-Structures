@@ -27,7 +27,7 @@ public class StudentAdministration {
             int submitDocs = Integer.parseInt(sc.nextLine());
             int takeIndex = Integer.parseInt(sc.nextLine());
             int takeDocs = Integer.parseInt(sc.nextLine());
-            Students s = new Students(name, submitDocs, takeIndex, takeDocs);
+            Students s = new  Students(name, submitDocs, takeIndex, takeDocs);
             if(s.submitDocs == 1) documents.enqueue(s);
             else if(s.takeIndex == 1) index.enqueue(s);
             else if(s.takeDocs == 1) highSchoolDocs.enqueue(s);

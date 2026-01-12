@@ -1,6 +1,12 @@
 package stack_book;
 import java.util.*;
 
+/*
+Пример:
+Влез: s x (s - a) x (s - b) x (s - c)
+Излез: s x (s - a) x (s - b) x (s - c) ima korektni zagradi
+*/
+
 public class Zagradi {
     public static boolean korektni(char left, char right) {
         if(left == '(' && right == ')') return true;

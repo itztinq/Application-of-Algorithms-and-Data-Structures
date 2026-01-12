@@ -209,6 +209,6 @@ public class SwapPairs {
             curr.succ.element = x;
             curr = curr.succ.succ;
         }
-        System.out.println(list.toString());
+        System.out.println(list);
     }
 }

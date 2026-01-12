@@ -16,10 +16,11 @@ public class H20 {
         String str = sc.nextLine();
         String[] atoms = str.split(" ");
         int cnt = 0;
+
         ArrayStack<String> H = new ArrayStack<>(100);
         ArrayStack<String> O = new ArrayStack<>(100);
 
-        for(String atom: atoms) {
+        for(String atom : atoms) {
             if(atom.equals("H")) H.push(atom);
             else if(atom.equals("O")) O.push(atom);
 

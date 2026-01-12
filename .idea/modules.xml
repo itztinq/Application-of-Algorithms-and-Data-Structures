@@ -3,6 +3,10 @@
   <component name="ProjectModuleManager">
     <modules>
       <module fileurl="file://$PROJECT_DIR$/APS.iml" filepath="$PROJECT_DIR$/APS.iml" />
+      <module fileurl="file://$PROJECT_DIR$/hash/hash.iml" filepath="$PROJECT_DIR$/hash/hash.iml" />
+      <module fileurl="file://$PROJECT_DIR$/kolokvium_2/kolokvium_2.iml" filepath="$PROJECT_DIR$/kolokvium_2/kolokvium_2.iml" />
+      <module fileurl="file://$PROJECT_DIR$/oned-ds/oned-ds.iml" filepath="$PROJECT_DIR$/oned-ds/oned-ds.iml" />
+      <module fileurl="file://$PROJECT_DIR$/trees/trees.iml" filepath="$PROJECT_DIR$/trees/trees.iml" />
     </modules>
   </component>
 </project>

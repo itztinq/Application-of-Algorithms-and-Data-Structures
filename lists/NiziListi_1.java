@@ -121,8 +121,10 @@ public class NiziListi_1 {
             arr.insertLast(sc.nextInt());
             sum += arr.get(i);
         }
+        System.out.println(sum);
         System.out.println(arr);
         int avg = sum / n;
+        System.out.println(avg);
         for(int i = 0; i < arr.getSize(); i++) {
             if(arr.get(i) < avg) arr.delete(i--);
         }

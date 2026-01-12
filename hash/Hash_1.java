@@ -21,7 +21,7 @@ class CBHT<K extends Comparable<K>, E> {
 
     // An object of class CBHT is a closed-bucket hash table, containing
     // entries of class MapEntry.
-    private SLLNode<MapEntry<K, E>>[] buckets;
+    public SLLNode<MapEntry<K, E>>[] buckets;
 
     @SuppressWarnings("unchecked")
     public CBHT(int m) {

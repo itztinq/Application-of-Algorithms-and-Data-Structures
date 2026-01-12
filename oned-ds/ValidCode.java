@@ -3,14 +3,40 @@ import java.util.*;
 public class ValidCode {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
-        Stack<String> stack = new Stack<>();
+        Stack<String> stack = new Stack<>() {
+            @Override
+            public boolean isEmpty() {
+                return false;
+            }
+
+            @Override
+            public String peek() {
+                return "";
+            }
+
+            @Override
+            public void clear() {
+
+            }
+
+            @Override
+            public void push(String x) {
+
+            }
+
+            @Override
+            public String pop() {
+                return "";
+            }
+        };
         while(true) {
-            String str = sc.nextLine();
-            if(str.equals("x")) break;
-            if(!str.startsWith("end")) stack.push(str);
-            else {
-                if(stack.isEmpty() || !stack.peek().equals(str.substring(3))) {
-                    System.out.println("Invalid");
+            String line = sc.nextLine();
+            if(line.equals("x")) break;
+            if(!line.startsWith("end")) {
+                stack.push(line);
+            } else {
+                if(stack.isEmpty() || !stack.peek().equals(line.substring(3))) {
+                    System.out.println("invalid");
                     return;
                 }
                 stack.pop();

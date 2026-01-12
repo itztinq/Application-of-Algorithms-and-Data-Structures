@@ -115,7 +115,7 @@ public class Library {
             int science = Integer.parseInt(sc.nextLine());
             int fiction = Integer.parseInt(sc.nextLine());
             int history = Integer.parseInt(sc.nextLine());
-            Student s = new  Student(name, science, fiction, history);
+            Student s = new Student(name, science, fiction, history);
             if(s.science == 1) scienceQ.enqueue(s);
             else if(s.fiction == 1) fictionQ.enqueue(s);
             else if(s.history == 1) historyQ.enqueue(s);
@@ -133,7 +133,7 @@ public class Library {
                 if(s.history == 1) historyQ.enqueue(s);
                 else System.out.println(s.name);
             }
-            if(!historyQ.isEmpty()) {
+            while(!historyQ.isEmpty()) {
                 Student s = historyQ.dequeue();
                 System.out.println(s.name);
             }
